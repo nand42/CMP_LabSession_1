@@ -5,17 +5,24 @@
 using namespace std;
 int main () {
   Vector3d v1;
-  v1.printxyz();
-  v1.setvx(4);
-  v1.printxyz();
-  v1.setvy(5);
-  v1.printxyz();
-  v1.setvz(6);
-  v1.printxyz();
-  v1.setxyz(1,2,3);
-  v1.printxyz();
+  v1.printxyz(); // print
+  v1.setvx(1);
+  v1.printxyz(); // print
+  v1.setvy(2);
+  v1.printxyz(); // print
+  v1.setvz(3);
+  v1.printxyz(); // print
+  v1.setxyz(3,3,4);
+  v1.printxyz(); // print
+  
   v1.magnitude();
-  v1.printmag();
+  v1.printmag(); // print
+  v1.polartheta();
+  v1.polarphi();
+  v1.printpolar(); // print
+  v1.convraddeg();
+  v1.printpolar(); // print
+  
   return 0;
 }
 
